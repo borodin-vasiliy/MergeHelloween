@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Merge</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <style>
+        body {
+			width: 100vw;
+			height: 100vh;
+            padding: 0px;
+            margin: 0px;
+			overflow: hidden;
+            background: #fbf5f3;
+  			background-image: url(assets/background.jpg);
+  			background-size: cover;
+
+			touch-action: none;
+        }
+		.noselect {
+		  -webkit-touch-callout: none; /* iOS Safari */
+		    -webkit-user-select: none; /* Safari */
+		     -khtml-user-select: none; /* Konqueror HTML */
+		       -moz-user-select: none; /* Old versions of Firefox */
+		        -ms-user-select: none; /* Internet Explorer/Edge */
+		            user-select: none; /* Non-prefixed version, currently
+		                                  supported by Chrome, Edge, Opera and Firefox */
+		}
+		::selection { background: transparent; }
+		::-moz-selection { background: transparent; }
+
+		#game-loading {
+			overflow: hidden;
+			position: absolute;
+			width: 100vw;
+			height: 100vh;
+
+			font-family: Arial;
+			font-style: bold;
+			font-size: 42px;
+			text-align: center;
+			vertical-align: middle;
+			line-height: 100vh;
+			z-index: 1;
+		}
+
+		#game-container {
+			overflow: hidden;
+			position: relative;
+			width: 100vw;
+			height: 100vh;
+			z-index: 10;
+		}
+    </style>
+</head>
+
+<body class="noselect">
+	<div id="game-loading"></div>
+	<div id="game-container"></div>
+</body>
+
+</html>

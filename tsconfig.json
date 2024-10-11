@@ -1,0 +1,27 @@
+{
+	"compilerOptions": {
+		"strictPropertyInitialization": false,
+		"strict": false,
+		"noEmit": false,
+		"target": "ESNext",
+		"module": "ESNext",
+		"lib": ["es2019", "es6", "dom", "webworker"],
+		"importHelpers": true,
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"sourceMap": true,
+		"baseUrl": "./src",
+		"paths": {
+		  "~/*": ["./*"]
+		},
+        "outDir": "./dist",
+		"types": [
+			"phaser"
+		]
+	},
+	"include": [
+		"src/**/*",
+		"types/**/*"
+	]
+}
